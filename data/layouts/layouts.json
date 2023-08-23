@@ -4410,6 +4410,46 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEATON_TOWN",
+      "name": "SeatonTown_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/SeatonTown/border.bin",
+      "blockdata_filepath": "data/layouts/SeatonTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_INSIDE_OF_SHIP",
+      "name": "InsideOfShip_Layout",
+      "width": 17,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/InsideOfShip/border.bin",
+      "blockdata_filepath": "data/layouts/InsideOfShip/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOLTIK_CAVE",
+      "name": "JoltikCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/JoltikCave/border.bin",
+      "blockdata_filepath": "data/layouts/JoltikCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE001",
+      "name": "Route001_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Route001/border.bin",
+      "blockdata_filepath": "data/layouts/Route001/map.bin"
     }
   ]
 }

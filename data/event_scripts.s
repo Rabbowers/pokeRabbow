@@ -1055,3 +1055,12 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/SeatonTown/scripts.inc"
+	.include "data/maps/Route001/scripts.inc"
+	.include "data/maps/JoltikCave/scripts.inc"
+	.include "data/maps/InsideOfShip/scripts.inc"
+
+	.include "data/maps/SeatonTown_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/SeatonTown_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/SeatonTown_Mart/scripts.inc"
