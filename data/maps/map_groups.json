@@ -94,8 +94,7 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "SeatonTown",
-    "Route001"
+    "SeatonTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -629,6 +628,7 @@
   "gMapGroup_IndoorSeaton": [
     "SeatonTown_PokemonCenter_1F",
     "SeatonTown_PokemonCenter_2F",
-    "SeatonTown_Mart"
+    "SeatonTown_Mart",
+    "SeatonTown__Mine1F"
   ]
 }

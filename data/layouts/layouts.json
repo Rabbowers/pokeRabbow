@@ -2417,7 +2417,7 @@
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
       "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
     },
@@ -4414,10 +4414,10 @@
     {
       "id": "LAYOUT_SEATON_TOWN",
       "name": "SeatonTown_Layout",
-      "width": 50,
+      "width": 70,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Seaton",
       "border_filepath": "data/layouts/SeatonTown/border.bin",
       "blockdata_filepath": "data/layouts/SeatonTown/map.bin"
     },
@@ -4442,14 +4442,14 @@
       "blockdata_filepath": "data/layouts/JoltikCave/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE001",
-      "name": "Route001_Layout",
+      "id": "LAYOUT_SEATON_TOWN_MINE1F",
+      "name": "SeatonTown__Mine1F_Layout",
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
-      "border_filepath": "data/layouts/Route001/border.bin",
-      "blockdata_filepath": "data/layouts/Route001/map.bin"
+      "border_filepath": "data/layouts/SeatonTown__Mine1F/border.bin",
+      "blockdata_filepath": "data/layouts/SeatonTown__Mine1F/map.bin"
     }
   ]
 }

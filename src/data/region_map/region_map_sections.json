@@ -1706,16 +1706,8 @@
     },
     {
       "map_section": "MAPSEC_SEATON_TOWN",
-      "name": "",
+      "name": "SEATON TOWN",
       "x": 26,
-      "y": 5,
-      "width": 2,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_ROUTE_001",
-      "name": "",
-      "x": 24,
       "y": 5,
       "width": 2,
       "height": 1

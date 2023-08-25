@@ -215,7 +215,7 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_SEATON_TOWN                  0xD5
-#define MAPSEC_ROUTE_001                    0xD6
+#define MAPSEC_ROUTE_601                    0xD6
 #define MAPSEC_NONE                         0xD7
 
 #define METLOC_SPECIAL_EGG                  0xFD

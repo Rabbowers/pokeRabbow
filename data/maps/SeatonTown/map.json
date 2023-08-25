@@ -12,55 +12,56 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_ROUTE001",
-      "offset": 3,
-      "direction": "left"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
-      "x": 37,
+      "x": 57,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_INSIDE_OF_SHIP",
       "dest_warp_id": "0"
     },
     {
-      "x": 30,
+      "x": 50,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_SEATON_TOWN",
+      "dest_map": "MAP_SEATON_TOWN_MINE1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 21,
+      "x": 41,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
+      "x": 34,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 9,
+      "x": 29,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",
       "dest_warp_id": "0"
     },
     {
-      "x": 15,
+      "x": 35,
       "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_SEATON_TOWN_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",
       "dest_warp_id": "0"
@@ -69,18 +70,11 @@
       "x": 21,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_SEATON_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 1,
-      "y": 19,
-      "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
+      "x": 49,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",

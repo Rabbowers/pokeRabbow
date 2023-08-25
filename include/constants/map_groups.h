@@ -64,7 +64,6 @@
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 #define MAP_SEATON_TOWN         (57 | (0 << 8))
-#define MAP_ROUTE001            (58 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -599,6 +598,7 @@
 #define MAP_SEATON_TOWN_POKEMON_CENTER_1F (0 | (34 << 8))
 #define MAP_SEATON_TOWN_POKEMON_CENTER_2F (1 | (34 << 8))
 #define MAP_SEATON_TOWN_MART              (2 | (34 << 8))
+#define MAP_SEATON_TOWN_MINE1F            (3 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 
