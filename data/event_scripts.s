@@ -1064,3 +1064,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SeatonTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/SeatonTown_Mart/scripts.inc"
 	.include "data/maps/SeatonTown__Mine1F/scripts.inc"
+
+	.include "data/maps/SeatonTown_Factory1F/scripts.inc"
+
+	.include "data/maps/SeatonTown_Factory2F/scripts.inc"

@@ -35,8 +35,8 @@
       "x": 41,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_SEATON_TOWN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_SEATON_TOWN_FACTORY1F",
+      "dest_warp_id": "1"
     },
     {
       "x": 34,

@@ -4450,6 +4450,26 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/SeatonTown__Mine1F/border.bin",
       "blockdata_filepath": "data/layouts/SeatonTown__Mine1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEATON_TOWN_FACTORY1F",
+      "name": "SeatonTown_Factory1F_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SeatonTown_Factory1F/border.bin",
+      "blockdata_filepath": "data/layouts/SeatonTown_Factory1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEATON_TOWN_FACTORY2F",
+      "name": "SeatonTown_Factory2F_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SeatonTown_Factory2F/border.bin",
+      "blockdata_filepath": "data/layouts/SeatonTown_Factory2F/map.bin"
     }
   ]
 }
