@@ -36,7 +36,7 @@ else
 EXE :=
 endif
 
-TITLE       := POKEMON EMER
+TITLE       := POKEMON RABB
 GAME_CODE   := BPEE
 MAKER_CODE  := 01
 REVISION    := 0
@@ -63,7 +63,7 @@ else
   CPP := $(PREFIX)cpp
 endif
 
-ROM_NAME := pokeemerald.gba
+ROM_NAME := pokerabbow.gba
 ELF_NAME := $(ROM_NAME:.gba=.elf)
 MAP_NAME := $(ROM_NAME:.gba=.map)
 OBJ_DIR_NAME := build/emerald
@@ -425,6 +425,7 @@ $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 	$(FIX) $@ -p --silent
+	$(shell ./done.sh)
 
 modern: all
 
