@@ -4601,7 +4601,7 @@ BattleScript_EffectPsywave::
 
 BattleScript_EffectCounter::
 	attackcanceler
-	counterdamagecalculator BattleScript_FailedFromAtkString
+	counterdamagecalculator BattleScript_ButItFailedAtkStringPpReduce
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
@@ -4926,7 +4926,7 @@ BattleScript_ProtectLikeAtkString:
 
 BattleScript_EffectSpikes::
 	attackcanceler
-	trysetspikes BattleScript_FailedFromAtkString
+	trysetspikes BattleScript_ButItFailedAtkStringPpReduce
 	attackstring
 	ppreduce
 	attackanimation
@@ -5324,7 +5324,7 @@ BattleScript_EffectPsychUp::
 
 BattleScript_EffectMirrorCoat::
 	attackcanceler
-	mirrorcoatdamagecalculator BattleScript_FailedFromAtkString
+	mirrorcoatdamagecalculator BattleScript_ButItFailedAtkStringPpReduce
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
@@ -5546,9 +5546,9 @@ BattleScript_EffectFakeOut::
 	setmoveeffect MOVE_EFFECT_FLINCH
 	goto BattleScript_EffectHit
 
-BattleScript_FailedFromAtkString::
+BattleScript_ButItFailedAtkStringPpReduce::
 	attackstring
-BattleScript_FailedFromPpReduce::
+BattleScript_ButItFailedPpReduce::
 	ppreduce
 BattleScript_ButItFailed::
 	pause B_WAIT_TIME_SHORT
@@ -5938,7 +5938,7 @@ BattleScript_EffectWish::
 BattleScript_EffectAssist:
 	attackcanceler
 	attackstring
-	assistattackselect BattleScript_FailedFromPpReduce
+	assistattackselect BattleScript_ButItFailedPpReduce
 	attackanimation
 	waitanimation
 	setbyte sB_ANIM_TURN, 0
@@ -5966,7 +5966,7 @@ BattleScript_EffectCloseCombat:
 
 BattleScript_EffectMagicCoat:
 	attackcanceler
-	trysetmagiccoat BattleScript_FailedFromAtkString
+	trysetmagiccoat BattleScript_ButItFailedAtkStringPpReduce
 	attackstring
 	ppreduce
 	attackanimation
@@ -6124,7 +6124,7 @@ BattleScript_EffectGrudge:
 
 BattleScript_EffectSnatch:
 	attackcanceler
-	trysetsnatch BattleScript_FailedFromAtkString
+	trysetsnatch BattleScript_ButItFailedAtkStringPpReduce
 	attackstring
 	ppreduce
 	attackanimation
