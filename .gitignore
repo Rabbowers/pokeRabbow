@@ -39,3 +39,5 @@ prefabs.json
 *.diff
 *.sym
 *.js
+
+!wsl-notify-send.exe
