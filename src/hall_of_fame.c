@@ -44,7 +44,7 @@ struct HallofFameMon
     u32 personality;
     u16 species;
     u8 lvl;
-    u8 nick[POKEMON_NAME_LENGTH];
+    u8 nickname[POKEMON_NAME_LENGTH];
 };
 
 struct HallofFameTeam
@@ -1163,7 +1163,7 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
         AddTextPrinterParameterized3(0, FONT_NORMAL, width, 1, sMonInfoTextColors, TEXT_SKIP_DRAW, text);
 
         text[0] = CHAR_SLASH;
-        stringPtr = StringCopy(text + 1, gSpeciesNames[currMon->species]);
+        stringPtr = StringCopy(text + 1, GetSpeciesName(currMon->species));
 
         if (currMon->species != SPECIES_NIDORAN_M && currMon->species != SPECIES_NIDORAN_F)
         {
