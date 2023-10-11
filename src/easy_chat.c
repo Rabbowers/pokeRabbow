@@ -230,7 +230,7 @@ enum {
     PALTAG_TRIANGLE_CURSOR,
     PALTAG_RECTANGLE_CURSOR,
     PALTAG_MISC_UI,
-    PALTAG_RS_INTERVIEW_FRAME,  
+    PALTAG_RS_INTERVIEW_FRAME,
 };
 
 enum {
@@ -240,7 +240,7 @@ enum {
     GFXTAG_START_SELECT_BUTTONS,
     GFXTAG_MODE_WINDOW,
     GFXTAG_RS_INTERVIEW_FRAME,
-    GFXTAG_BUTTON_WINDOW,  
+    GFXTAG_BUTTON_WINDOW,
 };
 
 
@@ -5204,7 +5204,7 @@ static const u8 *GetEasyChatWord(u8 groupId, u16 index)
     {
     case EC_GROUP_POKEMON:
     case EC_GROUP_POKEMON_NATIONAL:
-        return gSpeciesNames[index];
+        return GetSpeciesName(index);
     case EC_GROUP_MOVE_1:
     case EC_GROUP_MOVE_2:
         return gMoveNames[index];
@@ -5224,7 +5224,7 @@ u8 *CopyEasyChatWord(u8 *dest, u16 easyChatWord)
     {
         u16 index = EC_INDEX(easyChatWord);
         u8 groupId = EC_GROUP(easyChatWord);
-        resultStr = StringCopy(dest, GetEasyChatWord(groupId, index));
+        resultStr = StringCopyUppercase(dest, GetEasyChatWord(groupId, index));
     }
     else
     {
