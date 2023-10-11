@@ -4470,6 +4470,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/SeatonTown_Factory2F/border.bin",
       "blockdata_filepath": "data/layouts/SeatonTown_Factory2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEATON_TOWN_HOUSE1",
+      "name": "SeatonTown_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SeatonTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/SeatonTown_House1/map.bin"
     }
   ]
 }

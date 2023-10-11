@@ -19,20 +19,13 @@
   "warp_events": [
     {
       "x": 57,
-      "y": 8,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_INSIDE_OF_SHIP",
       "dest_warp_id": "0"
     },
     {
-      "x": 50,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_SEATON_TOWN_MINE1F",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 41,
+      "x": 48,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN_FACTORY1F",
@@ -46,14 +39,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
+      "x": 28,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_SEATON_TOWN",
+      "dest_map": "MAP_SEATON_TOWN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
+      "x": 34,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN_MART",
@@ -79,6 +72,34 @@
       "elevation": 0,
       "dest_map": "MAP_SEATON_TOWN",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SEATON_TOWN_MINE1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 54,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SEATON_TOWN_FACTORY1F",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 54,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_SEATON_TOWN_FACTORY1F",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 54,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SEATON_TOWN_FACTORY1F",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

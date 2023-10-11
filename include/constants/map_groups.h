@@ -601,6 +601,7 @@
 #define MAP_SEATON_TOWN_MINE1F            (3 | (34 << 8))
 #define MAP_SEATON_TOWN_FACTORY1F         (4 | (34 << 8))
 #define MAP_SEATON_TOWN_FACTORY2F         (5 | (34 << 8))
+#define MAP_SEATON_TOWN_HOUSE1            (6 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

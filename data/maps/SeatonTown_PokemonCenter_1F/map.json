@@ -26,45 +26,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SeatonTown_PokemonCenter_1F_EventScript_Nurse",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 4,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_PokemonCenter_1F_EventScript_Gentleman",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 10,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_PokemonCenter_1F_EventScript_Boy",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 3,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_PokemonCenter_1F_EventScript_Girl",
-      "flag": "0"
     }
   ],
   "warp_events": [
@@ -73,14 +34,14 @@
       "y": 8,
       "elevation": 3,
       "dest_map": "MAP_SEATON_TOWN",
-      "dest_warp_id": "7"
+      "dest_warp_id": "6"
     },
     {
       "x": 6,
       "y": 8,
       "elevation": 3,
       "dest_map": "MAP_SEATON_TOWN",
-      "dest_warp_id": "7"
+      "dest_warp_id": "6"
     },
     {
       "x": 1,

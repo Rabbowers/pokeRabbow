@@ -157,6 +157,7 @@
 #define METATILE_EverGrande_Door_PokemonLeague  0x21D
 
 // gTileset_Facility
+#define METATILE_Facility_CalmWater                     0x318
 #define METATILE_Facility_DataPad                       0x3E4
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile0  0x314
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile1  0x315
@@ -243,6 +244,7 @@
 #define METATILE_General_TallGrass_TreeUp      0x025
 #define METATILE_General_YellowCaveIndent      0x1A8
 #define METATILE_General_YellowCaveOpen        0x1A9
+#define METATILE_Seaton_Door                   0x241
 
 // gTileset_GenericBuilding
 #define METATILE_GenericBuilding_TableEdge               0x2F1
