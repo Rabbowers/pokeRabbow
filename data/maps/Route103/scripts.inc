@@ -1,4 +1,5 @@
 .set LOCALID_RIVAL, 2
+.set LOCALID_ZIGZAGOON, 21
 
 Route103_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route103_OnTransition
@@ -12,6 +13,14 @@ Route103_OnTransition:
 
 Route103_OnLoad:
 	call_if_set FLAG_SYS_GAME_CLEAR, Route103_EventScript_OpenAlteringCave
+    returnqueststate QUEST_ZIGZAGOON_LOST
+
+	switch VAR_RESULT
+		case 2, Route103_EventScript_RemoveZigzagoon
+	end
+
+Route103_EventScript_RemoveZigzagoon::
+	removeobject LOCALID_ZIGZAGOON
 	end
 
 Route103_EventScript_OpenAlteringCave::
@@ -98,6 +107,14 @@ Route103_EventScript_AfterMayBattle::
 Route103_EventScript_AfterBrendanBattle::
 	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
+	end
+
+Route103_EventScript_ZigzagoonReturn::
+	lockall
+	msgbox Route103_Text_ZigzagoonReturn, MSGBOX_NPC
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ZIGZAGOON_LOST, SUB_QUEST_1
+	applymovement LOCALID_ZIGZAGOON, Route103_Movement_ZigzagoonReturn
+	releaseall
 	end
 
 Route103_EventScript_RivalExit::
@@ -187,6 +204,29 @@ Route103_Movement_RivalExit2:
 Route103_Movement_WatchRivalExitFacingEastOrWest:
 	delay_16
 	walk_in_place_faster_down
+	step_end
+
+Route103_Movement_ZigzagoonReturn:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
 	step_end
 
 Route103_EventScript_Boy::
@@ -353,3 +393,5 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+Route103_Text_ZigzagoonReturn:
+	.string "Zigzagoon!$"

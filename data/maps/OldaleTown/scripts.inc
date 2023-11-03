@@ -1,6 +1,7 @@
 .set LOCALID_MART_EMPLOYEE, 2
 .set LOCALID_FOOTPRINTS_MAN, 3
 .set LOCALID_RIVAL, 4
+.set LOCALID_ZIGZAGOON, 6
 
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
@@ -12,7 +13,13 @@ OldaleTown_OnTransition:
 	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
+	removeobject LOCALID_ZIGZAGOON
+	goto_if_quest_reward QUEST_ZIGZAGOON_LOST, OldaleTown_EventScript_AddZigzagoon
+	goto_if_quest_complete QUEST_ZIGZAGOON_LOST, OldaleTown_EventScript_AddZigzagoon
 	end
+
+OldaleTown_EventScript_AddZigzagoon::
+	addobject LOCALID_ZIGZAGOON
 
 @ This script seems pointless because nothing uses VAR_OLDALE_TOWN_STATE
 OldaleTown_EventScript_SetOldaleState::
@@ -36,6 +43,50 @@ OldaleTown_EventScript_TownSign::
 OldaleTown_EventScript_Girl::
 	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
 	end
+
+
+OldaleTown_EventScript_Artist::
+    returnqueststate QUEST_ZIGZAGOON_LOST
+
+	switch VAR_RESULT
+		case 1, OldaleTown_EventScript_ArtistInactive
+		case 2, OldaleTown_EventScript_ArtistActive
+		case 3, OldaleTown_EventScript_ArtistReward
+		case 4, OldaleTown_EventScript_ArtistComplete
+
+OldaleTown_EventScript_ArtistComplete::
+	msgbox OldaleTown_Text_Artist_QuestComplete, MSGBOX_NPC
+	end
+
+OldaleTown_EventScript_ArtistReward::
+	msgbox OldaleTown_Text_Artist_QuestReward, MSGBOX_NPC
+	completequest QUEST_ZIGZAGOON_LOST
+	openquestmenu
+	giveitem ITEM_POTION
+	end
+
+OldaleTown_EventScript_ArtistActive::
+	msgbox OldaleTown_Text_Artist_QuestActive, MSGBOX_NPC
+	end
+
+OldaleTown_EventScript_ArtistInactive::
+	msgbox OldaleTown_Text_Artist_QuestRequest, MSGBOX_YESNO
+	setflag FLAG_SYS_QUEST_MENU_GET
+	switch VAR_RESULT
+	case YES, OldaleTown_EventScript_Artist_AcceptQuest
+	case NO, OldaleTown_EventScript_Artist_DeclineQuest
+	end
+
+OldaleTown_EventScript_Artist_AcceptQuest::
+	msgbox OldaleTown_Text_Artist_AcceptQuest, MSGBOX_NPC
+	questmenu QUEST_MENU_UNLOCK_QUEST QUEST_ZIGZAGOON_LOST
+	openquestmenu
+	end
+
+OldaleTown_EventScript_Artist_DeclineQuest::
+	msgbox OldaleTown_Text_Artist_DeclineQuest, MSGBOX_NPC
+	end
+
 
 OldaleTown_EventScript_MartEmployee::
 	lock
@@ -399,3 +450,28 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
+
+OldaleTown_Text_Artist_QuestComplete:
+	.string "Thank you, I missed her so much$"
+
+OldaleTown_Text_Artist_QuestReward:
+	.string "Thank you, I missed her so much\n"
+	.string "Here's a reward for it :D$"
+
+OldaleTown_Text_Artist_QuestActive:
+	.string "Please find my Zigzagoon, I miss her$"
+
+OldaleTown_Text_Artist_QuestRequest:
+	.string "Hey there! My name is john\n"
+	.string "and I Have a task for you if you're willing.\l"
+	.string "You see, my ZIGZAGOON recently ran away$"
+
+OldaleTown_Text_Artist_AcceptQuest:
+	.string "That's great!\n"
+	.string "Last i saw it it was going North,\l"
+	.string "towards route 103$"
+
+OldaleTown_Text_Artist_DeclineQuest:
+	.string "Awwww\n"
+	.string "If you decide to change your mind,\l"
+	.string "just come ask$"
